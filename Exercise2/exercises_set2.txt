@@ -1,0 +1,36 @@
+Exercise1
+Automatically Decompressing Files
+
+Given a list of filenames as input, this script queries each target file (parsing the output of the file command) for the type of compression used on it. Then the script automatically invokes the appropriate decompression command (gunzip, bunzip2, unzip, uncompress, or whatever). If a target file is not compressed, the script emits a warning message, but takes no other action on that particular file.
+
+
+Exercise2
+Unique System ID
+
+Generate a "unique" 6-digit hexadecimal identifier for your computer. Do not use the flawed hostid command. Hint: md5sum /etc/passwd, then select the first 6 digits of output.
+
+
+Exercise3
+Backup
+
+Archive as a "tarball" (*.tar.gz file) all the files in your home directory tree (/home/your-name) that have been modified in the last 24 hours. Hint: use find.
+
+Optional: you may use this as the basis of a backup script.
+
+
+Exercise4
+Checking whether a process is still running
+
+Given a process ID (PID) as an argument, this script will check, at user-specified intervals, whether the given process is still running. You may use the ps and sleep commands.
+
+
+Exercise5
+Primes
+
+Print (to stdout) all prime numbers between 60000 and 63000. The output should be nicely formatted in columns (hint: use printf).
+
+
+Exercise6
+Lottery Numbers
+
+One type of lottery involves picking five different numbers, in the range of 1 - 50. Write a script that generates five pseudorandom numbers in this range, with no duplicates. The script will give the option of echoing the numbers to stdout or saving them to a file, along with the date and time the particular number set was generated. (If your script consistently generates winning lottery numbers, then you can retire on the proceeds and leave shell scripting to those of us who have to work for a living.)
